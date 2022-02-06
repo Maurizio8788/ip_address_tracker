@@ -1,0 +1,11 @@
+<header class="header">
+    <h1 class="header__title">IP Address Tracker</h1>
+    <form (ngSubmit)="onSubmit(f.value.ip)" #f="ngForm" class="tracker">
+        <input type="text" ngModel name="ip" id="ip" class="tracker__search-ip">
+        <span class="tracker__feedback" *ngIf="!isValidIp">invalid Ip Address</span>
+        <button class="tracker__btn" type="submit">
+            <img src="/assets/img/icon-arrow.svg" alt="arrow">
+        </button>
+    </form>
+    <maury-info-tracker class="tracker__comp"></maury-info-tracker>
+</header>

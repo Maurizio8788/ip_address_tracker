@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-white: #fff;
+  --color-v-dark-gray: hsl(0, 0%, 17%);
+  --color-dark-gray: hsl(0, 0%, 59%);
+  --color-danger: #dc3545;
+
+  --font-size-md: 1.8rem;
+  --font-size-lg: 2.5rem;
+  --font-size-xl: 3rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  font-family: Rubik, sans-serif;
+}

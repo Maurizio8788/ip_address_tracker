@@ -1,0 +1,25 @@
+<div class="info-tracker">
+    <div class="info-tracker__grid">
+        <div class="info-tracker__item">
+            <p class="info-tracker__title">ip address</p>
+            <h3 class="info-tracker__data" *ngIf="infoTracker">{{ infoTracker?.ip }}</h3>
+        </div>
+        <span class="info-tracker__bar"></span>
+        <div class="info-tracker__item">
+            <p class="info-tracker__title">location</p>
+            <h3 class="info-tracker__data" *ngIf="infoTracker">{{ infoTracker?.location?.city + ', ' +
+                infoTracker?.location?.region +
+                infoTracker?.location?.postalCode }}</h3>
+        </div>
+        <span class="info-tracker__bar"></span>
+        <div class="info-tracker__item">
+            <p class="info-tracker__title">timezone</p>
+            <h3 class="info-tracker__data" *ngIf="infoTracker">UTC {{infoTracker?.location?.timezone}}</h3>
+        </div>
+        <span class="info-tracker__bar"></span>
+        <div class="info-tracker__item">
+            <p class="info-tracker__title">isp</p>
+            <h3 class="info-tracker__data" *ngIf="infoTracker">{{ infoTracker?.isp }}</h3>
+        </div>
+    </div>
+</div>
